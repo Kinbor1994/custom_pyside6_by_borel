@@ -1,4 +1,4 @@
-from pyside6_custom_widgets import Dashboard
+from pyside6_custom_widgets.dashboard import Dashboard
 
 from utils.utils import set_app_icon
 

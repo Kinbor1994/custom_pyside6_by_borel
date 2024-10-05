@@ -1,6 +1,6 @@
 from pyside6_imports import QWidget, QVBoxLayout
-from pyside6_custom_widgets import Label
-from pyside6_custom_widgets import ComboBox
+from pyside6_custom_widgets.label import Label
+from pyside6_custom_widgets.combobox_2 import ComboBox
 
 
 class LabeledComboBox(QWidget):

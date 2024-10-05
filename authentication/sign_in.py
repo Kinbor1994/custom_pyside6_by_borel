@@ -1,9 +1,9 @@
 from pathlib import Path
 from controllers.user_controller import UserController
 from database.create_db import check_and_create_db
-from pyside6_custom_widgets import Button
-from pyside6_custom_widgets import LabeledLineEdit
-from pyside6_custom_widgets import Label
+from pyside6_custom_widgets.button import Button
+from pyside6_custom_widgets.labeled_line_edit import LabeledLineEdit
+from pyside6_custom_widgets.label import Label
 from pyside6_imports import QDialog, QVBoxLayout, QHBoxLayout,QIcon, QLineEdit, QApplication,QSize, QMessageBox, QFrame
 from qt_material import apply_stylesheet
 

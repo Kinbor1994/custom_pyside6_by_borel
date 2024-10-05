@@ -1,7 +1,7 @@
 from datetime import datetime
 from pyside6_imports import QWidget, QVBoxLayout, QDate
-from pyside6_custom_widgets import Label
-from pyside6_custom_widgets import DateEdit
+from pyside6_custom_widgets.label import Label
+from pyside6_custom_widgets.date_edit import DateEdit
 
 
 class LabeledDateEdit(QWidget):

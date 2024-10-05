@@ -1,12 +1,12 @@
 from sqlalchemy import Date, DateTime, Float, Integer, String
 
 from pyside6_imports import QDialog, QVBoxLayout, QHBoxLayout, QFrame, QSpacerItem, QSizePolicy, QMessageBox, QWidget, Signal, QCloseEvent
-from pyside6_custom_widgets import Button
-from pyside6_custom_widgets import Label
-from pyside6_custom_widgets import LabeledComboBox
-from pyside6_custom_widgets import LabeledDateEdit
-from pyside6_custom_widgets import LabeledLineEdit
-from pyside6_custom_widgets import CustomTableWidget
+from pyside6_custom_widgets.button import Button
+from pyside6_custom_widgets.label import Label
+from pyside6_custom_widgets.labeled_combobox_2 import LabeledComboBox
+from pyside6_custom_widgets.labeled_date_edit import LabeledDateEdit
+from pyside6_custom_widgets.labeled_line_edit import LabeledLineEdit
+from pyside6_custom_widgets.table_widget import CustomTableWidget
 from utils.utils import  set_app_icon
 
 

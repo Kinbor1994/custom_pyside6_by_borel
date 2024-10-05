@@ -1,7 +1,7 @@
-from pyside6_custom_widgets import Button
+from pyside6_custom_widgets.button import Button
 from pyside6_imports import QWidget, QVBoxLayout
-from pyside6_custom_widgets import Label
-from pyside6_custom_widgets import LineEdit
+from pyside6_custom_widgets.label import Label
+from pyside6_custom_widgets.line_edit import LineEdit
 
 
 class LabeledLineEdit(QWidget):

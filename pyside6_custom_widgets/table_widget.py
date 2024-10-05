@@ -2,10 +2,10 @@ from datetime import date, datetime
 from babel.numbers import format_decimal
 
 from PySide6.QtWidgets import QWidget, QVBoxLayout, QTableWidget, QTableWidgetItem, QHeaderView, QHBoxLayout, QMessageBox
-from pyside6_custom_widgets import Button
-from pyside6_custom_widgets import Label
-from pyside6_custom_widgets import LineEdit
-from pyside6_custom_widgets import ActionButtonsWidget
+from pyside6_custom_widgets.button import Button
+from pyside6_custom_widgets.label import Label
+from pyside6_custom_widgets.line_edit import LineEdit
+from pyside6_custom_widgets.widget_items_button import ActionButtonsWidget
 
 class CustomTableWidget(QWidget):
     """

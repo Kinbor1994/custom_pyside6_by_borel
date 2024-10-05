@@ -1,5 +1,5 @@
-from pyside6_custom_widgets import Button
-from pyside6_custom_widgets import LabeledLineEdit
+from pyside6_custom_widgets.button import Button
+from pyside6_custom_widgets.labeled_line_edit import LabeledLineEdit
 from pyside6_imports import QDialog, QVBoxLayout, QHBoxLayout, QLineEdit, QApplication,QSize
 from qt_material import apply_stylesheet
 

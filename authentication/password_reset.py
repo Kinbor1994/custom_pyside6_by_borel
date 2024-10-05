@@ -1,7 +1,7 @@
 from pathlib import Path
 from controllers.user_controller import UserController
-from pyside6_custom_widgets import Button
-from pyside6_custom_widgets import LabeledLineEdit
+from pyside6_custom_widgets.button import Button
+from pyside6_custom_widgets.labeled_line_edit import LabeledLineEdit
 from pyside6_imports import QDialog, QVBoxLayout, QLineEdit, QHBoxLayout, QIcon, QApplication,QSize, QMessageBox
 from qt_material import apply_stylesheet
 

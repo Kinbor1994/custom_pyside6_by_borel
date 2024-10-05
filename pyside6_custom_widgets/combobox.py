@@ -203,7 +203,7 @@ class ComboBox(QWidget):
 if __name__ == "__main__":
     from pyside6_imports import QApplication, QMainWindow, QPushButton
     from qt_material import apply_stylesheet
-    from pyside6_custom_widgets import Button
+    from pyside6_custom_widgets.button import Button
     app = QApplication([])
 
     window = QMainWindow()

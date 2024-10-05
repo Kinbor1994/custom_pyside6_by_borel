@@ -1,6 +1,6 @@
 from pyside6_imports import  QPushButton,  QSize, QHBoxLayout, QWidget
 import qtawesome as qta
-from pyside6_custom_widgets import LineEdit
+from pyside6_custom_widgets.line_edit import LineEdit
 
 class SearchBar(QWidget):
     """

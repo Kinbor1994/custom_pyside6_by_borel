@@ -1,7 +1,6 @@
 from database.database import Base, engine, BASE_DIR
 from models.user import User
 from models.audit_model import AuditLog
-from models.incomes import IncomeCategoryModel, IncomeModel
 
 def check_and_create_db():
     """Checks if the database exists; if not, creates it.

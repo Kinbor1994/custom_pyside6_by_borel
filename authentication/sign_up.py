@@ -2,11 +2,11 @@ from pathlib import Path
 from controllers.user_controller import UserController
 from database.create_db import check_and_create_db
 from pyside6_imports import QDialog, QVBoxLayout, QHBoxLayout, QIcon, QSize, QMessageBox, QFrame
-from pyside6_custom_widgets import LabeledComboBox
-from pyside6_custom_widgets import ComboBox
-from pyside6_custom_widgets import LabeledLineEdit
-from pyside6_custom_widgets import Button
-from pyside6_custom_widgets import LineEdit
+from pyside6_custom_widgets.labeled_combobox_2 import LabeledComboBox
+from pyside6_custom_widgets.combobox_2 import ComboBox
+from pyside6_custom_widgets.labeled_line_edit import LabeledLineEdit
+from pyside6_custom_widgets.button import Button
+from pyside6_custom_widgets.line_edit import LineEdit
 from authentication.sign_in import SignIn
 from utils.utils import secret_questions, set_app_icon
 
