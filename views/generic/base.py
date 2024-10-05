@@ -1,4 +1,4 @@
-from sqlalchemy import Date, DateTime, Float, Integer, String
+from sqlalchemy import Date, DateTime, Enum, Float, Integer, String
 
 from pyside6_imports import QDialog, QVBoxLayout, QHBoxLayout, QFrame, QSpacerItem, QSizePolicy, QMessageBox, QWidget, Signal, QCloseEvent
 from pyside6_custom_widgets.button import Button
@@ -86,12 +86,21 @@ class BaseFormWidget(QDialog):
         if not editable:
             return 
 
-        if isinstance(column.type, (String, Integer, Float)) and not column.foreign_keys:
+        # Handle String, Integer, Float columns without foreign keys
+        if isinstance(column.type, (String, Integer, Float)) and not column.foreign_keys and input_type != "enum":
             return LabeledLineEdit(label_text=verbose_name, required=required, input_type=input_type)
+
+        # Handle ForeignKey columns
         elif column.foreign_keys:
             return LabeledComboBox(label_text=verbose_name, items=self.get_cbx_items(column.name), required=required)
+
+        # Handle Date or DateTime columns
         elif isinstance(column.type, (Date, DateTime)):
             return LabeledDateEdit(label_text=verbose_name, required=required)
+
+        # Handle Enum columns (like gender)
+        elif isinstance(column.type, Enum):
+            return LabeledComboBox(label_text=verbose_name, items=column.type.enums, required=required)
 
         return None
 
